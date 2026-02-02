@@ -1,8 +1,10 @@
 ﻿// MaterialToTexture_RendererInspector.csC:\Users\DimaS\Desktop\FeebleSnowOriginal-master\Assets\Dima Serebrennikov\Debug shaders\MaterialToTexture_RendererInspector.csMaterialToTexture_RendererInspector.cs
+#if UNITY_EDITOR
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
+using Serebrennikov;
 using UnityEditor;
 using UnityEngine;
 [CustomEditor(typeof(MaterialToTexture_Renderer))]
@@ -30,3 +32,4 @@ public class MaterialToTexture_RendererInspector : Editor {
         SceneView.RepaintAll();
     }
 }
+#endif
